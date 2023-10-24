@@ -26,29 +26,29 @@ function App() {
         </a>
         {/* 1 Desktop */}
         <div className="items-center justify-center mt-[4rem] gap-4 hidden md:flex">
-          <img src={exbox} alt="" />
+          {/* <img src={logo} alt="" /> */}
           <h1 className="text-[2.5rem] text-white">اکسکوینو، یک جعبه پر از پاداش و جایزه!</h1>
         </div>
         {/* 1 Mobile */}
         <div className="text-center mt-[7rem]  md:hidden text-[1.5rem] text-white ">
           <div className="flex items-center justify-center gap-4 mb-3">
-            <img src={exbox} alt="" />
+            {/* <img src={logo} alt="" /> */}
             اکسکوینو،
           </div>
           <h1 className=""> یک جعبه پر از پاداش و جایزه!</h1>
         </div>
         {/* 2 Desktop */}
-        <div className="items-center justify-center mt-[3rem] gap-4  text-[1.5rem] text-white  hidden md:flex font-light">
-          <span>با</span>
-          <img src={exbox} alt="" className="w-[8rem]" />
-          <h1 className="">اکسکوینو، روزانه و ماهانه پاداش و جایزه‌های هیجان‌انگیز بگیرید</h1>
+        <div className="items-center justify-center mt-[3rem] gap-1  text-[1.5rem] text-white  hidden md:flex font-light">
+          <span className="font-bold">با اکسکوینو</span>
+          {/* <img src={logo} alt="" className="w-[8rem]" /> */}
+          <h1 className=""> روزانه و ماهانه پاداش و جایزه‌های هیجان‌انگیز بگیرید</h1>
         </div>
         {/* 2 Mobile */}
         <div className="text-center mt-[7rem] md:hidden text-[1rem] text-white font-light">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <span>با</span>
-            <img src={exbox} alt="" className="w-[11.5rem]" />
-            اکسکوینو، روزانه و
+            <span className="font-bold">با اکسکوینو،</span>
+            {/* <img src={logo} alt="" className="w-[11.5rem]" /> */}
+            روزانه و
           </div>
           <h1 className=""> ماهانه پاداش و جایزه‌های هیجان‌انگیز بگیرید</h1>
         </div>
@@ -61,12 +61,12 @@ function App() {
           des="از ۷٪ تا ۱۴٪ پاداش ثابت سالانه از اکسکوینو بگیرید!"
           link={"https://excoino.com/blog/holders"}
         />
-        <Box
+        {/* <Box
           image={medal2}
           title="جایزه ماهانه بلیت سفر پاریس"
           des="با افزایش موجودی، دوشنبه آخر هر ماه از Ex-Box اکسکوینو جایزه‌های جذاب و متنوع بگیرید!"
           link={"https://excoino.com/leaderboard"}
-        />
+        /> */}
         <Box
           image={medal3}
           title="پاداش روزانه با یک کوین خاص"
