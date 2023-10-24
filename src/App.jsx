@@ -13,9 +13,9 @@ import Box from "./components/module/Box";
 import Footer from "./components/layout/Footer";
 function App() {
   return (
-    <div className="header">
+    <>
       <img src={headerBg} alt="" className="absolute w-full h-full hidden md:block z-[-99]" />
-
+      <img src={bgFooter} alt="" className="absolute bottom-[3rem]" />
       <img src={gradient} alt="" className="absolute left-0 z-[-1] md:z-1" />
       {/* container */}
       <div className="md:container px-4 md:px-0 ">
@@ -76,14 +76,13 @@ function App() {
       </div>
       {/* images */}
       <div className="relative md:hidden mt-[20rem] md:mt-0">
-        <img src={bgFooter} alt="" className="absolute top-[-51rem]" />
         <img src={medal} className="absolute left-0  bottom-[46px] w-[12rem]" />
         <img src={medal2} className="absolute left-[25vw]  bottom-[46px] z-[99] w-[12rem]" />
         <img src={medal3} className="absolute right-0 bottom-[46px] w-[12rem]" />
       </div>
       {/* end */}
       <Footer />
-    </div>
+    </>
   );
 }
 
