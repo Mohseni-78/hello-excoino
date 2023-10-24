@@ -6,17 +6,15 @@ import gradient from "./assets/gradient.png";
 import medal from "./assets/medal.png";
 import medal2 from "./assets/medal2.png";
 import medal3 from "./assets/medal3.png";
+import headerBg from "./assets/headerBg.png";
+import bgFooter from "./assets/bgFooter.png";
 // module
 import Box from "./components/module/Box";
 import Footer from "./components/layout/Footer";
 function App() {
   return (
-    <>
-      <img
-        src="https://hello.excoino.com/img/backGround01.d2657093.png"
-        alt=""
-        className="absolute  w-full h-full hidden md:block z-[-99]"
-      />
+    <div className="header">
+      <img src={headerBg} alt="" className="absolute w-full h-full hidden md:block z-[-99]" />
 
       <img src={gradient} alt="" className="absolute left-0 z-[-1] md:z-1" />
       {/* container */}
@@ -27,27 +25,27 @@ function App() {
           </div>
         </a>
         {/* 1 Desktop */}
-        <div className="items-center justify-center mt-[7rem] gap-4 hidden md:flex">
+        <div className="items-center justify-center mt-[4rem] gap-4 hidden md:flex">
           <img src={exbox} alt="" />
           <h1 className="text-[2.5rem] text-white">اکسکوینو، یک جعبه پر از پاداش و جایزه!</h1>
         </div>
         {/* 1 Mobile */}
-        <div className="text-center mt-[7rem]  md:hidden text-[1.5rem] text-white z-1">
-          <div className="flex items-center gap-4 mb-3">
+        <div className="text-center mt-[7rem]  md:hidden text-[1.5rem] text-white ">
+          <div className="flex items-center justify-center gap-4 mb-3">
             <img src={exbox} alt="" />
             اکسکوینو،
           </div>
           <h1 className=""> یک جعبه پر از پاداش و جایزه!</h1>
         </div>
         {/* 2 Desktop */}
-        <div className="items-center justify-center mt-[5rem] gap-4  text-[1.5rem] text-white  hidden md:flex font-light">
+        <div className="items-center justify-center mt-[3rem] gap-4  text-[1.5rem] text-white  hidden md:flex font-light">
           <span>با</span>
           <img src={exbox} alt="" className="w-[8rem]" />
           <h1 className="">اکسکوینو، روزانه و ماهانه پاداش و جایزه‌های هیجان‌انگیز بگیرید</h1>
         </div>
         {/* 2 Mobile */}
-        <div className="text-center mt-[7rem] md:hidden text-[1rem] text-white z-1 font-light">
-          <div className="flex items-center gap-2 mb-3">
+        <div className="text-center mt-[7rem] md:hidden text-[1rem] text-white font-light">
+          <div className="flex items-center justify-center gap-2 mb-3">
             <span>با</span>
             <img src={exbox} alt="" className="w-[11.5rem]" />
             اکسکوینو، روزانه و
@@ -56,7 +54,7 @@ function App() {
         </div>
       </div>
       {/* Boxes */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-[5rem] ">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-[5rem]">
         <Box
           image={medal}
           title="در اکسکوینو باش، با کلی پاداش"
@@ -77,14 +75,15 @@ function App() {
         />
       </div>
       {/* images */}
-      <div className="images relative md:hidden">
+      <div className="relative md:hidden mt-[20rem] md:mt-0">
+        <img src={bgFooter} alt="" className="absolute top-[-51rem]" />
         <img src={medal} className="absolute left-0  bottom-[46px] w-[12rem]" />
         <img src={medal2} className="absolute left-[25vw]  bottom-[46px] z-[99] w-[12rem]" />
         <img src={medal3} className="absolute right-0 bottom-[46px] w-[12rem]" />
       </div>
       {/* end */}
       <Footer />
-    </>
+    </div>
   );
 }
 
