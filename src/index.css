@@ -1,0 +1,36 @@
+@import "font.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  font-family: "YekanBakh FaN";
+}
+body,
+html {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #110527;
+}
+input,
+textarea {
+  font-family: inherit;
+}
+a {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  body,
+  html {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: inherit;
+  }
+}
+.images {
+  margin-top: 20rem;
+  /* background-image: url("https://hello.excoino.com/img/background-md.c7002455.png"); */
+  z-index: 9999;
+}
