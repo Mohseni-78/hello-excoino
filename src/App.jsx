@@ -76,7 +76,7 @@ function App() {
       </div>
       {/* images */}
       <div className="relative md:hidden mt-[20rem] md:mt-0">
-        <img src={bgFooter} alt="" className="absolute bottom-[-4rem]" />
+        <img src={bgFooter} alt="" className="absolute bottom-[-4rem] left-2" />
         <img src={medal} className="absolute left-0  bottom-[46px] w-[12rem]" />
         <img src={medal2} className="absolute left-[25vw]  bottom-[46px] z-[99] w-[12rem]" />
         <img src={medal3} className="absolute right-0 bottom-[46px] w-[12rem]" />
