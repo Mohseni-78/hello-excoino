@@ -5,6 +5,8 @@
 * {
   box-sizing: border-box;
   font-family: "YekanBakh FaN";
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
 }
 body,
 html {

@@ -18,11 +18,13 @@ function App() {
 
       <img src={gradient} alt="" className="absolute left-0 z-[-1] md:z-1" />
       {/* container */}
-      <div className="md:container px-4 md:px-0 ">
+      <div className="md:container px-4 md:px-0">
         <a href="https://www.excoino.com/" className="">
-          <div className="w-full">
-            <img src={logo} alt="" className="w-[7rem] md:w-[10rem] pt-5 mx-auto md:mr-auto " />
-          </div>
+          <img
+            src={logo}
+            alt=""
+            className="w-[7rem] md:w-[10rem] pt-5 mx-auto md:mr-auto md:ml-0"
+          />
         </a>
         {/* 1 Desktop */}
         <div className="items-center justify-center mt-[4rem] gap-4 hidden md:flex">
