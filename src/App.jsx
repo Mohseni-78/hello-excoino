@@ -68,7 +68,7 @@ function App() {
           link={"https://excoino.com/leaderboard"}
         /> */}
         <Box
-          image={medal3}
+          image={medal2}
           title="پاداش روزانه با یک کوین خاص"
           des="با نگهداری یک کوین دلخواه در حسابتون، ۳٪ پاداش سالانه رو به‌صورت روزانه دریافت کنید."
           link={"https://excoino.com/blog/dailyinvest"}
@@ -76,10 +76,12 @@ function App() {
       </div>
       {/* images */}
       <div className="relative md:hidden mt-[20rem] md:mt-0">
-        <img src={bgFooter} alt="" className="absolute bottom-[-4rem] left-2" />
-        <img src={medal} className="absolute left-0  bottom-[46px] w-[12rem]" />
-        <img src={medal2} className="absolute left-[25vw]  bottom-[46px] z-[99] w-[12rem]" />
-        <img src={medal3} className="absolute right-0 bottom-[46px] w-[12rem]" />
+        <img src={bgFooter} alt="" className="absolute bottom-[-4rem] left-2 w-full" />
+        <div className="relative">
+          <img src={medal} className="absolute left-[50%]  bottom-[46px] w-[12rem]" />
+          <img src={medal2} className="absolute right-[50%]  bottom-[46px] z-[99] w-[12rem]" />
+        </div>
+        {/* <img src={medal3} className="absolute right-0 bottom-[46px] w-[12rem]" /> */}
       </div>
       {/* end */}
       <Footer />
